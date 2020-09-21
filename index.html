@@ -58,6 +58,71 @@
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link rel="manifest" href="manifest.json">
+
+    
+    </head>
+    <body>
+TYPE html>
+<html lang="en">
+<head>
+  <title>Annisa Puspitasari | nisacodelifings</title>
+  <meta name="p:domain_verify" content="nisacodelifings"/>
+  <link rel="shortcut icon" href="images/icon.png">
+  <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Cousine&display=swap">
+<meta name="theme-color" content="indigo"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    *{
+      font-family: "Cousine", monospace;
+      font-size: 10pt;
+    }
+
+    @media screen and (max-width: 800px) {
+      .body{
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+    @media screen and (min-width: 800px) {
+      .body{
+        margin-left:25%;
+        margin-right: 25%;
+      }
+    }
+    .muter {
+      animation-name: rotate-center;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-delay: 0.5s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-fill-mode: none;
+    }
+    @keyframes rotate-center {
+      0%{
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+      }
+      100%{
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v7.0"></script>
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </head>
 <body class="overlay" style="background:indigo;">
   <div class="body">
@@ -181,5 +246,23 @@ text-decoration: underline;
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
-  </body>
+  <script>
+
+    // ServiceWorker Registration
+    if('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('sw.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                
+            }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+    
+
+</script>
+</body>
   </html>
